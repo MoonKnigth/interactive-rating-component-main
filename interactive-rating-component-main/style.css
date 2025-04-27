@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Grey_500: hsl(217, 12%, 63%);
+    --Grey_900: hsl(213, 19%, 18%);
+    --Grey_950: hsl(216, 12%, 8%);
+    --Orange_500: hsl(25, 97%, 53%);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid red;
+    background-color: var(--Grey_950);
+
+    .card {
+        width: 420px;
+        background-color: var(--Grey_900);
+        color: var(--White);
+        padding: 30px;
+        border-radius: 20px;
+
+        .title {
+            padding-bottom: 10px;
+
+            i {
+                background-color: var(--Grey_500);
+                display: flex;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+
+                img {}
+            }
+        }
+
+        .content {
+            p {
+                color: var(--Grey_500);
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .number {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 10px;
+
+                lo {
+                    display: flex;
+                    background-color: rgb(70, 70, 70);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                }
+
+                .rating-btn {
+                    &:hover {
+                        background-color: var(--Orange_500);
+                    }
+                    &.selected {
+                        background-color: white;
+                        color: var(--Grey_500);
+                      }
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            border-radius: 25px;
+            font-size: 16px;
+            padding: 10px;
+            background-color: var(--Orange_500);
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &:hover {
+                background-color: var(--White);
+            }
+        }
+    }
+}
+
+.conthank{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid red;
+    background-color: var(--Grey_950);
+.cardd{
+    width: 420px;
+    background-color: var(--Grey_900);
+    color: var(--White);
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-around;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h6{
+        color: var(--Orange_500);
+    }
+
+}
+
+}
